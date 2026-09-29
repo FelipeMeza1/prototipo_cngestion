@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <title>PROTOTIPO INTERFAZ - Perfil del Cliente</title>
+</head>
+<body class="client-page">
+    <main class="client-shell">
+        <header class="client-hero">
+            <div>
+                <p class="eyebrow">Gestión de clientes</p>
+                <h1>Perfil del cliente</h1>
+                <p class="hero-copy">Consulta los datos de contacto y la asignación comercial.</p>
+            </div>
+            <div class="status-pill"><span></span> Lead activo</div>
+        </header>
+
+        <section class="profile-section" aria-labelledby="contact-title">
+            <div class="section-heading">
+                <div class="section-icon" aria-hidden="true">01</div>
+                <div>
+                    <p class="section-kicker">Datos registrados</p>
+                    <h2 id="contact-title">Información personal y de contacto</h2>
+                </div>
+            </div>
+
+            <div class="table-wrap">
+                <table class="profile-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>RUT</th>
+                            <th>Correo</th>
+                            <th>Teléfono</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Nombre">Juan Pérez</td>
+                            <td data-label="RUT">12.345.678-9</td>
+                            <td data-label="Correo">juan.perez@example.com</td>
+                            <td data-label="Teléfono">+56 9 1234 5678</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="profile-section" aria-labelledby="executive-title">
+            <div class="section-heading">
+                <div class="section-icon" aria-hidden="true">02</div>
+                <div>
+                    <p class="section-kicker">Seguimiento comercial</p>
+                    <h2 id="executive-title">Ejecutivo/a asignado</h2>
+                </div>
+            </div>
+
+            <div class="executive-card">
+                <div class="avatar" aria-hidden="true">MG</div>
+                <div class="executive-details">
+                    <span class="detail-label">Nombre de ejecutivo/a</span>
+                    <strong>María González</strong>
+                </div>
+                <div class="executive-details executive-email">
+                    <span class="detail-label">Correo de ejecutivo/a</span>
+                    <a href="mailto:maria.gonzalez@example.com">maria.gonzalez@example.com</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="profile-section" aria-labelledby="origin-title">
+            <div class="section-heading">
+                <div class="section-icon" aria-hidden="true">03</div>
+                <div>
+                    <p class="section-kicker">Historial cronológico de interacciones</p>
+                    <h2 id="origin-title">Llamadas, reuniones y correos electrónicos</h2>
+                </div>
+            </div>
+
+            <div class="origin-info">
+                <span class="detail-label">Canal de origen</span>
+                <strong>TikTok</strong>
+            </div>
+
+            <div class="origin-info">
+                <br>
+                <span class="detail-label">Última interacción</span>
+                <strong>15 de junio de 2026</strong>
+                <br>
+                <span class="interaction-type">Tipo de interacción</span>
+                <strong>Llamada telefónica</strong>
+            </div>
+        </section>
+
+        <section class="profile-section" aria-labelledby="notes-title">
+            <div class="section-heading">
+                <div class="section-icon" aria-hidden="true">04</div>
+                <div>
+                    <p class="section-kicker">Notas internas</p>
+                    <h2 id="notes-title">Comentarios del equipo comercial</h2>
+                </div>
+            </div>
+
+            <div class="notes">
+                <p>El cliente mostró interés en el proyecto X y solicitó una demostración para la próxima semana.</p>
+            </div>
+        </section>
+
+        <section class="profile-section" aria-labelledby="actions-title">
+            <div class="section-heading">
+                <div class="section-icon" aria-hidden="true">05</div>
+                <div>
+                    <p class="section-kicker">Checklist de documentos</p>
+                    <h2 id="actions-title">Lista de documentos pendientes</h2>
+                </div>
+            </div>
+
+            <div class="actions">
+                <span>Tipo de trabajador:</span>
+                <strong>Dependiente</strong>
+                <br> <br>
+                <table class="actions-table">
+                    <thead>
+                        <tr>
+                            <th>Documento</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Contrato firmado</td>
+                            <td>Completado</td>
+                        </tr>
+                        <tr>
+                            <td>Formulario de registro completo</td>
+                            <td>Completado</td>
+                        </tr>
+                        <tr>
+                            <td>Documentos de identidad verificados</td>
+                            <td>Completado</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

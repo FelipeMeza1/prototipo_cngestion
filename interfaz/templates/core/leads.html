@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROTIPO DE INTERFAZ - LEADS</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+    <div id="header">
+        <h1>Leads</h1> 
+    </div>
+
+    <a href= "{% url 'perfil_cliente' %}" class="button">Ver Perfil del Cliente</a>
+
+    <div>
+        <table>
+            <table style="width: 100%; border-collapse: collapse; border-style: solid; border-width: 1px;">
+                <thead>
+                    <tr style="width: 100%; border-collapse: collapse; border-style: solid; border-width: 1px;">
+                        <th colspan="2" style="width: 100%; border-collapse: collapse; border-style: solid; border-width: 1px;">Nombre</th>
+                        <th colspan="2" style="width: 100%; border-collapse: collapse; border-style: solid; border-width: 1px;">RUT</th>
+                        <th colspan="2" style="width: 100%; border-collapse: collapse; border-style: solid; border-width: 1px;">Correo</th>
+                        <th colspan="2" style="width: 100%; border-collapse: collapse; border-style: solid; border-width: 1px;">Teléfono</th>
+                        <th colspan="2" style="width: 100%; border-collapse: collapse; border-style: solid; border-width: 1px;">Canal de Origen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="width: 100%; border-collapse: collapse; border-style: solid; border-width: 1px;">
+                        <td colspan="2" style="width: 100%; border-collapse: collapse; border-style: solid; border-width: 1px;">Juan Pérez</td>
+                        <td colspan="2" style="width: 100%; border-collapse: collapse; border-style: solid; border-width: 1px;">12.345.678-9</td>
+                        <td colspan="2" style="width: 100%; border-collapse: collapse; border-style: solid; border-width: 1px;">juan.perez@example.com</td>
+                        <td colspan="2" style="width: 100%; border-collapse: collapse; border-style: solid; border-width: 1px;">123-456-7890</td>
+                        <td colspan="2" style="width: 100%; border-collapse: collapse; border-style: solid; border-width: 1px;">TikTok</td>
+                    </tr>
+                </tbody>
+            </table>
+        </table>
+    </div>
+</body>
+</html>
